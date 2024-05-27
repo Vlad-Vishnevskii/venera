@@ -1,14 +1,46 @@
-var app = document.getElementById('writer');
-
-var typewriter = new Typewriter(app, {
-  loop: true,
-  delay: 60,
-  deleteSpeed: 1,
+let calA = new Calendar({
+  id: '#color-calendar',
+  theme: 'glass',
+  //weekdayType: 'long-upper',
+  // monthDisplayType: 'long',
+  calendarSize: 'small',
+  layoutModifiers: ['custom-calendar'],
+  eventsData: [
+    {
+      id: 1,
+      name: 'French class',
+      start: '2024-05-16T06:00:00',
+      end: '2024-05-16T20:30:00',
+    },
+    {
+      id: 2,
+      name: 'Blockchain 101',
+      start: '2024-05-18T10:00:00',
+      end: '2024-05-18T11:30:00',
+    },
+    {
+      id: 3,
+      name: 'Cheese 101',
+      start: '2024-05-21T10:00:00',
+      end: '2024-05-21T11:30:00',
+    },
+    {
+      id: 4,
+      name: 'Cheese 101',
+      start: '2024-05-24T10:00:00',
+      end: '2024-05-24T11:30:00',
+    },
+    {
+      id: 5,
+      name: 'Cheese 101',
+      start: '2024-05-26T10:00:00',
+      end: '2024-05-26T11:30:00',
+    },
+  ],
+  dateChanged: (currentDate, events) => {
+    console.log('date change', currentDate, events);
+  },
+  monthChanged: (currentDate, events) => {
+    console.log('month change', currentDate, events);
+  },
 });
-
-typewriter
-  .pauseFor(1000)
-  .typeString(
-    'wisp team is a group of independent developers, our goal is to provide a simple and affordable tool for automated market trading. Our native token, the White Wisp Token (WWT), is designed to be used in the trading system, allowing users to put it in staking or pay them directly. It is important to note that we have not reserved tokens for team members, nor do we have investors, advisors or other early holders. Our token will be fully hosted on a decentralized platform for efficient ecosystem management.'
-  )
-  .start();

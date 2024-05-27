@@ -7,6 +7,14 @@
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
     <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/color-calendar/dist/css/theme-glass.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Venera</title>
   </head>
   <body>
@@ -31,7 +39,9 @@
         <a class="sidebar_item" href="#">Процедуры</a>
       </nav>
       <div class="orders">
-        <div class="calendar"></div>
+        <div class="calendar">
+          <div id="color-calendar"></div>
+        </div>
         <ul class="orders_list">
           <li class="orders_item">
             <p class="orders_client">Клиент: Шульман Екатерина Викторовна</p>
@@ -60,6 +70,8 @@
         </ul>
       </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/color-calendar/dist/bundle.js"></script>
+
     <script src="./js/script.js"></script>
   </body>
 </html>
