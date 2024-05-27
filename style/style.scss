@@ -45,11 +45,6 @@ $trans-default: 0.3s $tf-default;
 $trans-modal: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
 $trans-600: 0.6s $tf-default;
 
-:root {
-  --font-family: 'Source Serif Pro', sans-serif;
-  --second-family: 'Viaoda Libre', sans-serif;
-}
-
 *,
 :before,
 :after {
@@ -60,12 +55,12 @@ $trans-600: 0.6s $tf-default;
 }
 
 @font-face {
-  font-family: 'Anton';
+  font-family: 'Viaoda Libre';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
 
-  src: url('../fonts/Anton-Regular.woff2') format('woff2'),
-    url('../fonts/Anton-Regular.woff') format('woff');
+  src: url('../fonts/ViaodaLibre-Regular.woff2') format('woff2'),
+    url('../fonts/ViaodaLibre-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -74,6 +69,11 @@ $trans-600: 0.6s $tf-default;
     url('../fonts/SourceSerifPro-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+:root {
+  --font-family: 'Source Serif Pro', sans-serif;
+  --second-family: 'Viaoda Libre', sans-serif;
 }
 
 html {
@@ -289,6 +289,10 @@ img {
     grid-template-rows: repeat(6, minmax(50px, 50px)) !important;
     column-gap: 26px;
     row-gap: 16px;
+    font-family: var(--second-family) !important;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+    color: #000 !important;
   }
 
   .calendar__weekdays {

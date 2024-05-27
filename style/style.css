@@ -1,8 +1,3 @@
-:root {
-  --font-family: "Source Serif Pro", sans-serif;
-  --second-family: "Viaoda Libre", sans-serif;
-}
-
 *,
 :before,
 :after {
@@ -13,10 +8,10 @@
 }
 
 @font-face {
-  font-family: "Anton";
+  font-family: "Viaoda Libre";
   font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Anton-Regular.woff2") format("woff2"), url("../fonts/Anton-Regular.woff") format("woff");
+  font-weight: 600;
+  src: url("../fonts/ViaodaLibre-Regular.woff2") format("woff2"), url("../fonts/ViaodaLibre-Regular.woff") format("woff");
 }
 @font-face {
   font-family: "Source Serif Pro";
@@ -24,6 +19,11 @@
   font-weight: normal;
   font-style: normal;
 }
+:root {
+  --font-family: "Source Serif Pro", sans-serif;
+  --second-family: "Viaoda Libre", sans-serif;
+}
+
 html {
   height: 100%;
 }
@@ -222,6 +222,10 @@ img {
   -moz-column-gap: 26px;
        column-gap: 26px;
   row-gap: 16px;
+  font-family: var(--second-family) !important;
+  font-weight: 400 !important;
+  font-size: 15px !important;
+  color: #000 !important;
 }
 .custom-calendar .calendar__weekdays {
   display: none !important;
