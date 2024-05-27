@@ -92,8 +92,9 @@ body {
 .main {
   display: grid;
   grid-template-columns: 400px 1fr;
-  column-gap: 100px;
+  column-gap: 60px;
   overflow: hidden;
+  padding-bottom: 100px;
 }
 
 .container {
@@ -115,9 +116,11 @@ img {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
-  padding-right: 100px;
+  padding-top: 35px;
+  padding-right: 120px;
+  box-sizing: border-box;
 
   @include vp-1590 {
     max-width: 1440px;
@@ -126,7 +129,8 @@ img {
   &_contactsList {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    padding-top: 31px;
   }
 
   &_contactsItem {
@@ -134,7 +138,7 @@ img {
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 10px 20px;
+      padding: 6px 20px;
       border-radius: 25px;
       width: 268px;
       min-height: 40px;
@@ -165,7 +169,7 @@ img {
     padding-left: 15px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    width: 340px;
+    width: 357px;
     height: 74px;
     background: #3eb489;
     font-family: var(--font-family);
@@ -184,7 +188,7 @@ img {
 .orders {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 35px;
   align-items: center;
 
   @include vp-1919 {
@@ -193,7 +197,7 @@ img {
 
   &_list {
     display: flex;
-    gap: 30px;
+    gap: 35px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -283,7 +287,8 @@ img {
     justify-content: center;
     grid-template-columns: repeat(7, minmax(50px, 50px)) !important;
     grid-template-rows: repeat(6, minmax(50px, 50px)) !important;
-    gap: 20px;
+    column-gap: 26px;
+    row-gap: 16px;
   }
 
   .calendar__weekdays {
