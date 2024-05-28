@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Venera</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="" class="header_logo">
+        <img src="./img/logo.svg" alt="ВЕНЕРА BEAUTY AND SPA" />
+      </a>
+      <ul class="header_contactsList">
+        <li class="header_contactsItem">
+          <a href="mailto:adminkosm">adminkosm</a>
+        </li>
+        <li class="header_contactsItem">
+          <a href="tel:+712345678">12345678</a>
+        </li>
+      </ul>
+    </header>
+    <main class="main">
+      <nav class="sidebar">
+        <a class="sidebar_item" href="./index.html">Записи</a>
+        <a class="sidebar_item" href="./clients.html">База клиентов</a>
+        <a class="sidebar_item sidebar_item--active">База врачей</a>
+        <a class="sidebar_item" href="./procedures.html">Процедуры</a>
+      </nav>
+      <div class="tableContainer">
+        <table class="table">
+          <tr>
+            <th class="table_header">Имя</th>
+            <th class="table_header">Рейтинг</th>
+            <th class="table_header">Процедура</th>
+            <th class="table_header">Сумма</th>
+            <th class="table_header">Действия</th>
+          </tr>
+          <tr>
+            <td class="table_cell">Шульман Екатерина Викторовна</td>
+            <td class="table_cell table_cell--rating">
+              <img src="./img/5-stars.png" />
+            </td>
+            <td class="table_cell">Лазерная шлифовка кожи (века)</td>
+            <td class="table_cell table_cell--center">11 100 Р</td>
+            <td class="table_cell table_cell--center">
+              <button type="button" class="table_removeBtn">
+                <img src="./img/delete_icon.svg" />
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table_cell">Шульман Екатерина Викторовна</td>
+            <td class="table_cell table_cell--rating">
+              <img src="./img/3-stars.png" />
+            </td>
+            <td class="table_cell">Лазерная шлифовка кожи (века)</td>
+            <td class="table_cell table_cell--center">11 100 Р</td>
+            <td class="table_cell table_cell--center">
+              <button type="button" class="table_removeBtn">
+                <img src="./img/delete_icon.svg" />
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table_cell">Шульман Екатерина Викторовна</td>
+            <td class="table_cell table_cell--rating">
+              <img src="./img/4_5-stars.png" />
+            </td>
+            <td class="table_cell">Лазерная шлифовка кожи (века)</td>
+            <td class="table_cell table_cell--center">11 100 Р</td>
+            <td class="table_cell table_cell--center">
+              <button type="button" class="table_removeBtn">
+                <img src="./img/delete_icon.svg" />
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table_cell">Шульман Екатерина Викторовна</td>
+            <td class="table_cell table_cell--rating">
+              <img src="./img/3_5stars.png" />
+            </td>
+            <td class="table_cell">Лазерная шлифовка кожи (века)</td>
+            <td class="table_cell table_cell--center">11 100 Р</td>
+            <td class="table_cell table_cell--center">
+              <button type="button" class="table_removeBtn">
+                <img src="./img/delete_icon.svg" />
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <script src="./js/table.js"></script>
+  </body>
+</html>
